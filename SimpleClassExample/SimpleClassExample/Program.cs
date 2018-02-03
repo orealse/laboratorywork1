@@ -22,7 +22,7 @@ namespace SimpleClassExample
 
             //Создать объект Human по имени Daisy имеет возрост 45 лет.
             Human daisy = new Human("Daisy", 45);
-            daisy.PrintState();*/
+            daisy.PrintState();
 
            //Вызов стандартного конструктора.
             Car chuck = new Car();
@@ -40,7 +40,19 @@ namespace SimpleClassExample
                 myCar.SpeedUp(5);
                 myCar.PrintState();
             }
+            Motorcycle c = new Motorcycle(5);
+            c.SetDriverName("Tiny");
+            c.PopAWheely();
+            Console.WriteLine("Rider name is {0}", c.name);
+            Console.ReadLine();*/
+
+            Human c = new Human(5);
+            c.SetDriverName("L");
+            c.PopAWheely();
+            Console.WriteLine("name is {0}", c.name); 
             Console.ReadLine();
+
+             
         }
     }
 }
